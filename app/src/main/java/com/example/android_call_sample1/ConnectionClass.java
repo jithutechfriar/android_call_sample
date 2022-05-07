@@ -3,7 +3,6 @@ import android.os.Build;
 import android.telecom.CallAudioState;
 import android.telecom.Connection;
 import android.util.Log;
-
 import androidx.annotation.RequiresApi;
 
 @RequiresApi(api = Build.VERSION_CODES.M)

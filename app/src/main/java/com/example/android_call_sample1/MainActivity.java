@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     Button btnStartCall,btnEndCall;
 
     TelecomManager telecomManager;
-    private final String PHONE_ACCOUNT_LABEL ="phone_account_label4";
+    private final String PHONE_ACCOUNT_LABEL ="phone_account_label";
     PhoneAccountHandle accountHandle;
     PhoneAccount phoneAccount;
 
