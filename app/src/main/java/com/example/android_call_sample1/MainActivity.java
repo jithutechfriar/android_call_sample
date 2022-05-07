@@ -8,7 +8,6 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.telecom.DisconnectCause;
 import android.telecom.PhoneAccount;
 import android.telecom.PhoneAccountHandle;
 import android.telecom.TelecomManager;
@@ -16,13 +15,12 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    private Button btnStartCall,btnEndCall;
+    Button btnStartCall,btnEndCall;
 
-    private TelecomManager telecomManager;
-    private final String PHONE_ACCOUNT_LABEL ="phone_account_label";
-    private PhoneAccountHandle accountHandle;
-    private PhoneAccount phoneAccount;
-    private ConnectionClass systemCallConnection;
+    TelecomManager telecomManager;
+    private final String PHONE_ACCOUNT_LABEL ="phone_account_label4";
+    PhoneAccountHandle accountHandle;
+    PhoneAccount phoneAccount;
 
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
@@ -45,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         btnEndCall.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                endCall();
+                endCall();
             }
         });
 
@@ -99,16 +97,12 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-//    @RequiresApi(api = Build.VERSION_CODES.M)
-//    void endCall(){
+    void endCall(){
 //        try {
 //
-//            systemCallConnection.setDisconnected(new DisconnectCause(DisconnectCause.REMOTE));
-//            systemCallConnection.destroy();
-//            systemCallConnection=null;
 //
 //        }catch (SecurityException e){
 //            throw  new SecurityException("cannot end the call", e);
 //        }
-//    }
+    }
 }
